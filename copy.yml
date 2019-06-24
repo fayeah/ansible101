@@ -2,8 +2,10 @@
 - name: local
   hosts: local
   vars: {'my_src': "~/Downloads/testAnsibleCopy"}
+
   tasks:
     - name: copy module
       copy:
         src: "{{my_src}}"
         dest: ~/Downloads/test22222
+        
