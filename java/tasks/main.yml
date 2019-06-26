@@ -1,0 +1,10 @@
+---
+
+- name: homebrew cask versions
+  homebrew_tap:
+    name: caskroom/versions
+
+- name: homebrew install adoptopenjdk8
+  homebrew_cask:
+    name: adoptopenjdk8
+    state: present
